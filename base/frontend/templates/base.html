@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <title>Acme Corp - Welcome</title>
+  </head>
+  <body class="container">
+    <header>
+      <!-- Navigation -->
+      <nav>
+        <ul>
+          <li><strong>Acme Corp</strong></li>
+        </ul>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Products</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main content -->
+    <main class="container">{% block content %} {% endblock %}</main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Acme Corp. All rights reserved.</p>
+      <p>
+        Follow us:
+        <a href="#" aria-label="Twitter">Twitter</a> |
+        <a href="#" aria-label="LinkedIn">LinkedIn</a> |
+        <a href="#" aria-label="Facebook">Facebook</a>
+      </p>
+    </footer>
+  </body>
+</html>
